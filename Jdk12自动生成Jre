@@ -1,0 +1,21 @@
+以往下载jdk1.6版本直接运行会生成jdk，jre两个文件，但今天下载jdk12运行后，只有jdk目录文件，并没有jre后来在网上查找后通过命令行方式手动生成jre
+
+1.下载jdk12 网址：https://www.oracle.com/technetwork/java/javase/downloads/jdk12-downloads-5295953.html ，根据自己系统来下载
+
+
+
+2.运行jdk-12.0.1_windows-x64_bin ，将路径改为自己安装想要安装的盘
+
+
+
+3.生成jdk目录，这个时候是没有jre 目录的
+
+
+
+4.打开命令窗口，切换到jdk安装目录，执行bin\jlink.exe --module-path jmods --add-modules java.desktop --output jre 完成。
+
+
+
+
+
+5.在配置JAVA_HOME，以及PATH后,jdk安装完成
